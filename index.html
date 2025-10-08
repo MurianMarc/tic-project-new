@@ -1,0 +1,80 @@
+<!DOCKTYPE html>
+<html>
+    <head>
+        <title> Lost and Found</title>
+        <style>
+            body{
+                margin: 0;
+                display: flex;
+                height: 100vh;
+                background-color: aliceblue;
+            } 
+
+
+            h1
+        {
+            text-align: center;
+        }
+        h2
+        {
+        text-align: center;
+        }
+
+        .upload, .search {
+        flex: 1; 
+        padding: 2rem;
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        flex-direction: column;
+
+        }
+
+        .upload{
+            background-color: bisque;
+        }
+
+        .search{
+            background-color: rgb(253, 211, 221);
+        }
+        .box1{
+            width: 400px;
+            height: 140px;
+            background-color: aqua;
+
+        }
+        </style>
+
+
+    </head>
+    <body style="color: rgb(0, 0, 0);">
+        
+        
+         <div class="upload">
+             <h1 style="margin-top: 0;"><p> Lost and Found</p></h1>
+         <h2> Upload a lost image </h2>
+         <p> to upload a lost image, click the buton</p>
+
+         <div class="box1">
+            <form id="my-form">
+         <label for="upload"> Image</label>
+
+         <p><input type="file" accept="image/*" id="upload" /></p>
+         <p><label for="desc"> Description:</label></p>
+         <input type="text" id="desc">
+         </div>
+      <input class="btn" type="submit" value="submit">
+         </form>
+    </div>
+
+    <div class="search"><h1 style="margin-top: 0;"> search for a lost item </h1>
+    <p> search based on descrption</p>
+    <p><input type="text" id="upload"></p>
+      <button style="display: block;">search</button>
+    </div>
+         </body>
+        <script type="module" src="main.js"></script>
+
+    </body>
+</html>

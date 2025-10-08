@@ -1,0 +1,14 @@
+<!DOCKTYPE html>
+<html>
+    <head>
+        <title> Lost and Found</title>
+
+    </head>
+    <body style="color: rgb(0, 0, 0);">
+        
+         <h1> Lost and Found</h1>
+         <h2> upload a lost image</h2>
+         <input type="file" accept="image/*"
+         id="upload" />
+    </body>
+</html>

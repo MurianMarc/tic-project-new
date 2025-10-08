@@ -1,0 +1,33 @@
+for my project i decided to make a simple website where 
+1.one can upload lost items to the website
+2. search for lost items on it
+
+the algorithm
+1.the website will be divided into two sections, report and request
+report
+2. a person (student or staff) uploads an image of a lost item to the website along with a description
+3. the website stores it in a database (for now it stores locally)
+4.a person (student or staff) makes a search request with a description
+5. the ai model (i used hugging face instead of openai cause the free version allows a higher upload size) will use the description from the request to search the database for an image which would match that description 
+6. the model will return with two messages based on an if statement
+if nothing is found gives a message for nothing,
+if something is found, it loads the image in the request section
+
+the whole project is complex and i have small knowledge in js (the backend still has issues)
+ i could not complete it due to the huggingface api rejecting requests for privacy issues
+
+
+
+procedures
+1. i made the main page and put the option to upload the image (index.html).
+2. there i put the code to the main.js file (frontend) which adds the events for uploading the image and description as well as request for the "lost item" with simple description and returns it as image with a specific dimension (if it has found)
+3.i made the server.js(backend) which connects with the frontend. something new i learned is that most api's never work with frontend due to privacy issues
+4.to solve further issues, i put a .env file which re-references the api key
+
+
+ notes:
+1. running the site by loading index.html wont work so it will have to be hostel locally
+2. in the folder open the terminal run npx http-server to launch it 
+3. the terminal should give a link to the page
+
+
